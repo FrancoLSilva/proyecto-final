@@ -1,0 +1,31 @@
+.red-Whatsapp {
+  color: #4dc247;
+}
+
+.red-facebook {
+  color: #3b5999;
+}
+
+.red-instagram {
+  color: #C13584;
+}
+
+.red-twitter {
+  color: #55acee;
+}
+
+footer {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #1f618d;
+  height: 250px;
+  border: none;
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+/*# sourceMappingURL=footer.css.map */
