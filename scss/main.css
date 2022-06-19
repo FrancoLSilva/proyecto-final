@@ -1075,21 +1075,24 @@ body main .vid-home {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: vid-home;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: auto;
-  width: 100%;
-  padding: 16px;
+  position: relative;
+  padding-bottom: 75%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body main .vid-home iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 body main .img-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: img-home;
@@ -1097,9 +1100,18 @@ body main .img-home {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
-body .main-form {
+body main .img-home .carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.main-form {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'sec form' '';
@@ -1108,7 +1120,7 @@ body .main-form {
   grid-area: main;
 }
 
-body .main-form .sec-form p strong {
+.main-form .sec-form p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1124,11 +1136,11 @@ body .main-form .sec-form p strong {
   padding: 20px;
 }
 
-body .main-form form {
+.main-form form {
   padding: 30px;
 }
 
-body .main-form form .bg-gray-400 div .mb-3 label .form-label {
+.main-form form .bg-gray-400 div .mb-3 label .form-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,13 +1153,42 @@ body .main-form form .bg-gray-400 div .mb-3 label .form-label {
           align-items: center;
 }
 
-body .main-price {
+.main-price {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'price' 'cards'  'table'  'map';
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 2fr  4fr 4fr 4fr;
+      grid-template-rows: 2fr  4fr 4fr 4fr;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: main;
 }
 
-body .main-price table {
+.main-price .sec-price {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: price;
+}
+
+.main-price .sec-cards {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+.main-price table {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: table;
   margin: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1158,15 +1199,15 @@ body .main-price table {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 200px;
-  width: 80px;
+  width: 100%;
 }
 
-body .main-price table thead tr th {
+.main-price table thead tr th {
   text-align: center;
   color: #fcf4f4;
 }
 
-body .main-price table tbody tr td {
+.main-price table tbody tr td {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1175,7 +1216,7 @@ body .main-price table tbody tr td {
   padding: 8px;
 }
 
-body .main-price table tbody tr td strong {
+.main-price table tbody tr td strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1187,7 +1228,7 @@ body .main-price table tbody tr td strong {
   color: #fcf4f4;
 }
 
-body .main-price .sec-price p strong {
+.main-price .sec-price p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,37 +1244,31 @@ body .main-price .sec-price p strong {
   padding: 8px;
 }
 
-body .main-price .map-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 600px;
-  margin: auto;
-  padding: 24px;
+.main-price .map-price {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: map;
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
 }
 
-body .main-price .map-price iframe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.main-price .map-price iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
-body .main-galery {
+.main-galery {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: main;
 }
 
-body .main-galery #galery {
+.main-galery #galery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -1249,14 +1284,14 @@ body .main-galery #galery {
       align-content: center;
 }
 
-body .main-galery #galery .div-galery {
+.main-galery #galery .div-galery {
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body .main-galery #galery .div-galery .img-galery {
+.main-galery #galery .div-galery .img-galery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1270,12 +1305,12 @@ body .main-galery #galery .div-galery .img-galery {
   width: 200px;
 }
 
-body .main-galery #galery .div-galery .img-galery:hover {
+.main-galery #galery .div-galery .img-galery:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-body .p-galery p strong {
+.p-galery p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

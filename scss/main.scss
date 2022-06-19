@@ -169,18 +169,37 @@ width: 100%;
 
 .vid-home{
    grid-area: vid-home;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: auto;
-   width: 100%;
-   padding: $spacing1*2;
+   position:relative;
+    padding-bottom: 75%;
+    height: 100%;
+    overflow: hidden;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            }
+   
 }
 
 .img-home{
+    display: flex;
    grid-area: img-home ;
    width: 100%;
-   justify-content: center;
+   justify-content:center;
+   position: relative;
+    .carousel-item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+
+    }
+  
+            
+  }
 
 }
 }
@@ -226,15 +245,35 @@ grid-area: main;
 }
 
 .main-price{
+    display: grid;    
+grid-template-areas:
+'price'
+'cards' 
+'table' 
+'map';
+grid-template-columns: auto;
+grid-template-rows: 2fr  4fr 4fr 4fr;
     grid-area: main;
+
+.sec-price{
+    grid-area: price;
+}
+
+.sec-cards{
+    grid-area: cards;
+    display: flex;
+    justify-content: center;
+    height: auto; 
+}
 table{ 
+    grid-area: table;
     margin: $spacing1*3;
     justify-content: center;
     align-content: center;
     background-color:$color-primary;
     flex-wrap: wrap;
     height: 200px;
-    width: 80px;
+    width: 100%;
         thead{
             tr{
                 th{
@@ -277,16 +316,17 @@ table{
 }
 
 .map-price{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 600px;
-    margin: auto;
-    padding: $spacing1*3;
+    grid-area: map;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
         iframe{
-            display: flex;
-            justify-items: center;
-            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
             }
              }
 }
@@ -341,7 +381,7 @@ grid-area: main;
 
 }
 
-}
+
 
 .titles{
     display: flex;
