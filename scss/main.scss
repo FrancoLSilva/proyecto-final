@@ -378,8 +378,8 @@ table{
     grid-template-areas: 
     'par-gal'
     'galery';
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr;
     justify-content: center;
     align-content: center;
     grid-area: main;
@@ -388,14 +388,13 @@ table{
     .sec-galery{
         display: grid;
         grid-area: par-gal;
-        height: auto;
+        height: 150px;
         width: 100%;
         justify-content: center;
+        margin: 0;
         p{
             strong{
                 display: flex;
-                justify-content: center;
-                align-items: center;
                 font-size: $secondary-text1;
                 font-family: 'Oswald', sans-serif;
                 text-align: center;
@@ -419,22 +418,83 @@ table{
         
 
         .div-galery{
+            display: flex;
             justify-items: center;
             align-items: center;
             width: auto;
+            
 
-        .img-galery{
+        .img-galery-1{
                 display: flex;
                 justify-items: center;
                 align-items: center; 
-                height: 2fr;
+                height: 300px;
                 width: 100%;
         }
         
-        .img-galery:hover{ 
-        transform: scale(1.02);
-    }
+        .img-galery-2{
+            display: flex;
+            justify-items: center;
+            align-items: center; 
+            height: 300px;
+            width: 100%;
+        }
 
+        .img-galery-3{
+            display: flex;
+            justify-items: center;
+            align-items: center; 
+            height: 300px;
+            width: 100%;
+        }
+
+        .img-galery-4{
+            display: flex;
+            justify-items: center;
+            align-items: center; 
+            height: 300px;
+            width: 100%;
+        }
+
+        .img-galery-5{
+            display: flex;
+            justify-items: center;
+            align-items: center; 
+            height: 300px;
+            width: 100%;
+        }
+
+        .img-galery-6{
+            display: flex;
+            justify-items: center;
+            align-items: center; 
+            height: 300px;
+            width: 100%;
+        }
+
+        .img-galery-1:hover{ 
+        transform: scale(1.02);
+        }
+
+        .img-galery-2:hover{ 
+            transform: scale(1.02);
+        }
+
+        .img-galery-3:hover{ 
+            transform: scale(1.02);
+        }
+
+        .img-galery-4:hover{ 
+            transform: scale(1.02);
+        }
+
+        .img-galery-5:hover{ 
+            transform: scale(1.02);
+        }
+
+        .img-galery-6:hover{ 
+            transform: scale(1.02);
+        }
     }
 
 }

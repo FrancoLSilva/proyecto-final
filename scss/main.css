@@ -33,7 +33,7 @@
 @media screen and (min-width: 768px) {
   /* Style para mis titulos */
   .titles-primario {
-    font-size: 30.6px;
+    font-size: 40.8px;
     font-weight: 600;
   }
   .titles-secundario {
@@ -75,7 +75,7 @@
   }
   body header .titles-primario strong {
     color: #d11616;
-    font-size: 30.6px;
+    font-size: 40.8px;
   }
   body header .slogan {
     display: -webkit-box;
@@ -91,7 +91,7 @@
   body header .slogan strong {
     margin: 0;
     color: #fcf4f4;
-    font-size: 15.3px;
+    font-size: 25.5px;
   }
   body footer {
     -ms-grid-row: 6;
@@ -100,7 +100,7 @@
   }
   body footer .titles-terciario {
     color: #fcf4f4;
-    font-size: 15.3px;
+    font-size: 25.5px;
   }
   body footer .contacto li {
     display: -webkit-box;
@@ -113,7 +113,7 @@
         -ms-flex-align: center;
             align-items: center;
     color: #fcf4f4;
-    font-size: 10.2px;
+    font-size: 15.3px;
   }
   body footer .div-social-bar {
     margin: 20px;
@@ -195,7 +195,7 @@
     color: white;
   }
   body main .sec-home p {
-    font-size: 15.3px;
+    font-size: 25.5px;
     font-family: 'Oswald', sans-serif;
   }
   body main .sec-home p strong {
@@ -258,7 +258,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 20px;
@@ -329,7 +329,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 15.3px;
+    font-size: 25.5px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 8px;
@@ -365,6 +365,9 @@
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .main-galery .sec-galery {
     display: -ms-grid;
@@ -387,7 +390,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 15.3px;
+    font-size: 25.5px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 20px;
@@ -398,24 +401,19 @@
     grid-area: galery;
     display: -ms-grid;
     display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    height: 800px;
-    width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: 1080px;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-line-pack: center;
         align-content: center;
+    padding: 20px;
   }
   body .main-galery #galery .div-galery {
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body .main-galery #galery .div-galery .img-galery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -423,12 +421,104 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 300px;
-    width: 400px;
+    position: relative;
+    height: auto;
+    margin: 15px;
+    padding: 0;
   }
-  body .main-galery #galery .div-galery .img-galery:hover {
+  body .main-galery #galery .div-galery .img-galery-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery #galery .div-galery .img-galery-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery #galery .div-galery .img-galery-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery #galery .div-galery .img-galery-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery #galery .div-galery .img-galery-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery #galery .div-galery .img-galery-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery #galery .div-galery .img-galery-1:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery #galery .div-galery .img-galery-2:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery #galery .div-galery .img-galery-3:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery #galery .div-galery .img-galery-4:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery #galery .div-galery .img-galery-5:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery #galery .div-galery .img-galery-6:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
@@ -437,7 +527,7 @@
 @media screen and (min-width: 1023px) {
   /* Style para mis titulos */
   .titles-primario {
-    font-size: 31.5px;
+    font-size: 42px;
     font-weight: 600;
   }
   .titles-secundario {
@@ -480,7 +570,7 @@
   }
   body header .titles-primario strong {
     color: #d11616;
-    font-size: 31.5px;
+    font-size: 42px;
   }
   body header .slogan {
     display: -webkit-box;
@@ -496,7 +586,7 @@
   body header .slogan strong {
     margin: 0;
     color: #fcf4f4;
-    font-size: 15.75px;
+    font-size: 26.25px;
   }
   body footer {
     -ms-grid-row: 6;
@@ -505,7 +595,7 @@
   }
   body footer .titles-terciario {
     color: #fcf4f4;
-    font-size: 15.75px;
+    font-size: 26.25px;
   }
   body footer .contacto li {
     display: -webkit-box;
@@ -518,7 +608,7 @@
         -ms-flex-align: center;
             align-items: center;
     color: #fcf4f4;
-    font-size: 10.5px;
+    font-size: 15.75px;
   }
   body footer .div-social-bar {
     margin: 20px;
@@ -600,7 +690,7 @@
     color: white;
   }
   body main .sec-home p {
-    font-size: 15.75px;
+    font-size: 26.25px;
     font-family: 'Oswald', sans-serif;
   }
   body main .sec-home p strong {
@@ -657,7 +747,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 15.75px;
+    font-size: 26.25px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 20px;
@@ -731,7 +821,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 15.75px;
+    font-size: 26.25px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 8px;
@@ -763,7 +853,7 @@
     display: grid;
         grid-template-areas: 'galery par-gal' 'galery par-gal' 'galery par-gal';
         grid-template-columns: 5fr 1fr;
-        grid-template-rows: 1fr 5fr;
+        grid-template-rows: 6fr;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
@@ -789,7 +879,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     padding: 20px;
@@ -797,10 +887,12 @@
   body .main-galery .sec-galery #galery {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: galery;
+        grid-template-areas: 'img-1 img-2 img-3' 'img-4 img-5 img-6';
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     height: 400px;
     grid-gap: 30px;
     width: auto;
@@ -811,12 +903,16 @@
         align-content: center;
   }
   body .main-galery .sec-galery #galery .div-galery {
+    grid-area: div-galery;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery {
+  body .main-galery .sec-galery #galery .div-galery .img-galery-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img-1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -824,12 +920,106 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 200px;
-    width: 400px;
+    height: 400px;
+    width: 100%;
+    position: absolute;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery:hover {
+  body .main-galery .sec-galery #galery .div-galery .img-galery-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img-2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: img-3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img-4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: img-5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-6 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: img-6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-1:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-2:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-3:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-4:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-5:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  body .main-galery .sec-galery #galery .div-galery .img-galery-6:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
@@ -943,7 +1133,7 @@ footer {
 }
 
 .titles-primario {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -993,7 +1183,7 @@ body header {
 
 body header .titles-primario strong {
   color: #d11616;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 body header .slogan {
@@ -1011,7 +1201,7 @@ body header .slogan {
 body header .slogan strong {
   margin: 0;
   color: #fcf4f4;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 body footer {
@@ -1022,7 +1212,7 @@ body footer {
 
 body footer .titles-terciario {
   color: #fcf4f4;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 body footer .contacto li {
@@ -1036,7 +1226,7 @@ body footer .contacto li {
       -ms-flex-align: center;
           align-items: center;
   color: #fcf4f4;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 body footer .div-social-bar {
@@ -1142,7 +1332,7 @@ body main .sec-home {
 }
 
 body main .sec-home p {
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -1235,7 +1425,7 @@ body main .img-home .carousel-item .imgnormalizada {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
   padding: 10px;
@@ -1346,7 +1536,7 @@ body main .img-home .carousel-item .imgnormalizada {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
   padding: 8px;
@@ -1372,10 +1562,10 @@ body main .img-home .carousel-item .imgnormalizada {
 
 .main-galery {
       grid-template-areas: 'par-gal' 'galery';
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 5fr;
-      grid-template-rows: 1fr 5fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 7fr;
+      grid-template-rows: 1fr 7fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1392,24 +1582,19 @@ body main .img-home .carousel-item .imgnormalizada {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: par-gal;
-  height: auto;
+  height: 150px;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
 }
 
 .main-galery .sec-galery p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 15px;
+  font-size: 25px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
   padding: 20px;
@@ -1437,14 +1622,6 @@ body main .img-home .carousel-item .imgnormalizada {
 }
 
 .main-galery #galery .div-galery {
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: auto;
-}
-
-.main-galery #galery .div-galery .img-galery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1452,11 +1629,107 @@ body main .img-home .carousel-item .imgnormalizada {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 2fr;
+  width: auto;
+}
+
+.main-galery #galery .div-galery .img-galery-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
   width: 100%;
 }
 
-.main-galery #galery .div-galery .img-galery:hover {
+.main-galery #galery .div-galery .img-galery-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.main-galery #galery .div-galery .img-galery-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.main-galery #galery .div-galery .img-galery-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.main-galery #galery .div-galery .img-galery-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.main-galery #galery .div-galery .img-galery-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.main-galery #galery .div-galery .img-galery-1:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.main-galery #galery .div-galery .img-galery-2:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.main-galery #galery .div-galery .img-galery-3:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.main-galery #galery .div-galery .img-galery-4:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.main-galery #galery .div-galery .img-galery-5:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.main-galery #galery .div-galery .img-galery-6:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
