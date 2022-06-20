@@ -229,9 +229,24 @@
     width: auto;
   }
   body .main-form {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'form sec-form' 'form sec-form';
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 4fr;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
+  }
+  body .main-form .sec-form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: sec-form;
+    height: 100%;
+    background-color: #3d4042;
+    color: white;
   }
   body .main-form .sec-form p strong {
     display: -webkit-box;
@@ -601,13 +616,18 @@
     width: auto;
   }
   body .main-form {
-        grid-template-areas: 'sec-form' 'form';
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'form sec-form' 'form sec-form';
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 4fr;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
   }
   body .main-form .sec-form {
     grid-area: 'sec-form';
+    height: 100%;
   }
   body .main-form .sec-form p strong {
     display: -webkit-box;
@@ -625,8 +645,8 @@
     padding: 20px;
   }
   body .main-form form {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: form;
     padding: 30px;
   }
@@ -1090,9 +1110,6 @@ body main .vid-home iframe {
 }
 
 body main .img-home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: img-home;
@@ -1100,24 +1117,43 @@ body main .img-home {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 body main .img-home .carousel-item {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
 }
 
+body main .img-home .carousel-item .imgnormalizada {
+  width: 100%;
+}
+
 .main-form {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'sec form' '';
+      grid-template-areas: 'sec-form' 'form';
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 1fr 4fr;
+      grid-template-rows: 1fr 4fr;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: main;
+}
+
+.main-form .sec-form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sec-form;
 }
 
 .main-form .sec-form p strong {
@@ -1133,10 +1169,13 @@ body main .img-home .carousel-item {
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .main-form form {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: form;
   padding: 30px;
 }
 

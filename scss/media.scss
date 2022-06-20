@@ -184,8 +184,19 @@ main{
 }
 
 .main-form{
+    display: grid;
+    grid-template-areas:
+    'form sec-form'
+    'form sec-form';
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
     grid-area: main;
         .sec-form{
+            display: grid;
+            grid-area: sec-form;
+            height: 100%;
+            background-color:rgb(61, 64, 66);
+            color: white;
             p{
                 strong{
                    display: flex;
@@ -526,12 +537,16 @@ main{
 }
 
 .main-form{
+    display: grid;
     grid-template-areas:
-    'sec-form'
-    'form' ;
+    'form sec-form'
+    'form sec-form';
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
     grid-area: main;
         .sec-form{
             grid-area: 'sec-form';
+            height: 100%;
             p{
                 strong{
                    display: flex;
@@ -549,7 +564,6 @@ main{
        
         form{
             grid-area: form;
-        
             padding: 30px;
                 .bg-gray-400{
                      div .mb-3{
