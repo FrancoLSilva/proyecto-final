@@ -43,13 +43,7 @@
     font-weight:600;
      }
 
-nav{
-    grid-area: nav;
-}
 
-h2{
-    grid-area: h2;
-}
 body{
     display: grid;
     grid-template-areas: 
@@ -84,6 +78,14 @@ body{
                     font-size: $secondary-text1;
                 }
             }
+    }
+
+    nav{
+        grid-area: nav;
+    }
+    
+    h2{
+        grid-area: h2;
     }
 
     footer{
@@ -170,15 +172,19 @@ body{
     }
     }
 
+main{
+    grid-area: main;
+}
 
-    main{
+}
+
+.main-home{
     display: grid;    
     grid-template-areas:
     'vid-home aside'
     'img-home aside';
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 2fr 1fr;
-    grid-area: main;
     margin: none;
     padding: 8px;
     width: 100%;
@@ -499,5 +505,5 @@ body{
         }
 
     }
-}
+
 

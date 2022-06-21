@@ -444,9 +444,9 @@ main{
  }
 
 
-@media screen and (min-width:1023px){
 
-  
+
+@media screen and (min-width:1023px){  
     /* Style para mis titulos */
 
 .titles-primario {
@@ -637,8 +637,9 @@ body{
 
         }
     }
+}
 
-    .main-form{
+.main-form{
         display: grid;
         grid-template-areas:
         'form sec-form'
@@ -664,7 +665,7 @@ body{
         }
 
        
-        form{
+form{
             grid-area: form;
             padding: 30px;
                 .bg-gray-400{
@@ -682,7 +683,7 @@ body{
 
     }
 
-    .main-price{
+.main-price{
         grid-area: main;
         table{ 
             margin: $spacing1*3;
@@ -719,7 +720,7 @@ body{
                 }
         }
 
-        .sec-price{
+.sec-price{
             p{
                 strong{
                 display: flex;
@@ -748,7 +749,7 @@ body{
         }
     }
            
-    .main-galery{
+.main-galery{
         display: grid;
         grid-template-areas: 
         'galery par-gal'
@@ -882,8 +883,7 @@ body{
             }
 
         }
-   
-}
+
 
 }
         

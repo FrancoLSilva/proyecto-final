@@ -748,7 +748,7 @@
     grid-area: img-home;
     width: auto;
   }
-  body .main-form {
+  .main-form {
     display: -ms-grid;
     display: grid;
         grid-template-areas: 'form sec-form' 'form sec-form';
@@ -758,13 +758,13 @@
     -ms-grid-column: 1;
     grid-area: main;
   }
-  body .main-form .sec-form {
+  .main-form .sec-form {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: sec-form;
     height: 100%;
   }
-  body .main-form .sec-form p strong {
+  .main-form .sec-form p strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -779,13 +779,13 @@
     text-align: center;
     padding: 20px;
   }
-  body .main-form form {
+  .main-form form {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: form;
     padding: 30px;
   }
-  body .main-form form .bg-gray-400 div .mb-3 label .form-label {
+  .main-form form .bg-gray-400 div .mb-3 label .form-label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -797,12 +797,12 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  body .main-price {
+  .main-price {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
   }
-  body .main-price table {
+  .main-price table {
     margin: 24px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -815,11 +815,11 @@
     height: 200px;
     width: 80px;
   }
-  body .main-price table thead tr th {
+  .main-price table thead tr th {
     text-align: center;
     color: #fcf4f4;
   }
-  body .main-price table tbody tr td {
+  .main-price table tbody tr td {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -827,7 +827,7 @@
         align-content: center;
     padding: 8px;
   }
-  body .main-price table tbody tr td strong {
+  .main-price table tbody tr td strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -838,7 +838,7 @@
     text-align: center;
     color: #fcf4f4;
   }
-  body .main-price .sec-price p strong {
+  .main-price .sec-price p strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -853,7 +853,7 @@
     text-align: center;
     padding: 8px;
   }
-  body .main-price .map-price {
+  .main-price .map-price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -866,7 +866,7 @@
     margin: auto;
     padding: 24px;
   }
-  body .main-price .map-price iframe {
+  .main-price .map-price iframe {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -875,7 +875,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  body .main-galery {
+  .main-galery {
     display: -ms-grid;
     display: grid;
         grid-template-areas: 'galery par-gal' 'galery par-gal' 'galery par-gal';
@@ -885,7 +885,7 @@
     -ms-grid-column: 1;
     grid-area: main;
   }
-  body .main-galery .sec-galery {
+  .main-galery .sec-galery {
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 1;
@@ -896,7 +896,7 @@
     background-color: #3d4042;
     color: white;
   }
-  body .main-galery .sec-galery p strong {
+  .main-galery .sec-galery p strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -911,7 +911,7 @@
     text-align: center;
     padding: 20px;
   }
-  body .main-galery #galery {
+  .main-galery #galery {
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 2;
@@ -929,14 +929,14 @@
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  body .main-galery #galery .div-galery {
+  .main-galery #galery .div-galery {
     grid-area: div-galery;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  body .main-galery #galery .div-galery .img-galery-1 {
+  .main-galery #galery .div-galery .img-galery-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: img-1;
@@ -951,7 +951,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery #galery .div-galery .img-galery-2 {
+  .main-galery #galery .div-galery .img-galery-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: img-2;
@@ -966,7 +966,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery #galery .div-galery .img-galery-3 {
+  .main-galery #galery .div-galery .img-galery-3 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: img-3;
@@ -981,7 +981,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery #galery .div-galery .img-galery-4 {
+  .main-galery #galery .div-galery .img-galery-4 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: img-4;
@@ -996,7 +996,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery #galery .div-galery .img-galery-5 {
+  .main-galery #galery .div-galery .img-galery-5 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: img-5;
@@ -1011,7 +1011,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery #galery .div-galery .img-galery-6 {
+  .main-galery #galery .div-galery .img-galery-6 {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: img-6;
@@ -1026,27 +1026,27 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery #galery .div-galery .img-galery-1:hover {
+  .main-galery #galery .div-galery .img-galery-1:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery #galery .div-galery .img-galery-2:hover {
+  .main-galery #galery .div-galery .img-galery-2:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery #galery .div-galery .img-galery-3:hover {
+  .main-galery #galery .div-galery .img-galery-3:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery #galery .div-galery .img-galery-4:hover {
+  .main-galery #galery .div-galery .img-galery-4:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery #galery .div-galery .img-galery-5:hover {
+  .main-galery #galery .div-galery .img-galery-5:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery #galery .div-galery .img-galery-6:hover {
+  .main-galery #galery .div-galery .img-galery-6:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
@@ -1176,18 +1176,6 @@ footer {
   font-weight: 600;
 }
 
-nav {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: nav;
-}
-
-h2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: h2;
-}
-
 body {
   display: -ms-grid;
   display: grid;
@@ -1229,6 +1217,18 @@ body header .slogan strong {
   margin: 0;
   color: #fcf4f4;
   font-size: 25px;
+}
+
+body nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+body h2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: h2;
 }
 
 body footer {
@@ -1331,6 +1331,12 @@ body footer .div-social-bar ul li .icon-twitter:hover {
 }
 
 body main {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.main-home {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'vid-home aside' 'img-home aside';
@@ -1338,15 +1344,12 @@ body main {
       grid-template-columns: 3fr 1fr;
   -ms-grid-rows: 2fr 1fr;
       grid-template-rows: 2fr 1fr;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: main;
   margin: none;
   padding: 8px;
   width: 100%;
 }
 
-body main .sec-home {
+.main-home .sec-home {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 1;
@@ -1358,12 +1361,12 @@ body main .sec-home {
   color: white;
 }
 
-body main .sec-home p {
+.main-home .sec-home p {
   font-size: 18px;
   font-family: 'Oswald', sans-serif;
 }
 
-body main .sec-home p strong {
+.main-home .sec-home p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1377,7 +1380,7 @@ body main .sec-home p strong {
   padding: 24px;
 }
 
-body main .vid-home {
+.main-home .vid-home {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: vid-home;
@@ -1387,7 +1390,7 @@ body main .vid-home {
   overflow: hidden;
 }
 
-body main .vid-home iframe {
+.main-home .vid-home iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -1395,7 +1398,7 @@ body main .vid-home iframe {
   height: 100% !important;
 }
 
-body main .img-home {
+.main-home .img-home {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: img-home;
@@ -1407,18 +1410,18 @@ body main .img-home {
   padding: 0;
 }
 
-body main .img-home .carousel-item {
+.main-home .img-home .carousel-item {
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
 }
 
-body main .img-home .carousel-item .imgnormalizada {
+.main-home .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-body .main-form {
+.main-form {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'sec-form' 'form';
@@ -1431,7 +1434,7 @@ body .main-form {
   grid-area: main;
 }
 
-body .main-form .sec-form {
+.main-form .sec-form {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: top;
@@ -1442,7 +1445,7 @@ body .main-form .sec-form {
   grid-area: sec-form;
 }
 
-body .main-form .sec-form p strong {
+.main-form .sec-form p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1458,14 +1461,14 @@ body .main-form .sec-form p strong {
   padding: 10px;
 }
 
-body .main-form form {
+.main-form form {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: form;
   padding: 30px;
 }
 
-body .main-form form .bg-gray-400 div .mb-3 label .form-label {
+.main-form form .bg-gray-400 div .mb-3 label .form-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1478,7 +1481,7 @@ body .main-form form .bg-gray-400 div .mb-3 label .form-label {
           align-items: center;
 }
 
-body .main-price {
+.main-price {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'price' 'cards'  'table'  'map';
@@ -1491,13 +1494,13 @@ body .main-price {
   grid-area: main;
 }
 
-body .main-price .sec-price {
+.main-price .sec-price {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: price;
 }
 
-body .main-price .sec-cards {
+.main-price .sec-cards {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: cards;
@@ -1510,7 +1513,7 @@ body .main-price .sec-cards {
   height: auto;
 }
 
-body .main-price table {
+.main-price table {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: table;
@@ -1527,12 +1530,12 @@ body .main-price table {
   width: 100%;
 }
 
-body .main-price table thead tr th {
+.main-price table thead tr th {
   text-align: center;
   color: #fcf4f4;
 }
 
-body .main-price table tbody tr td {
+.main-price table tbody tr td {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1541,7 +1544,7 @@ body .main-price table tbody tr td {
   padding: 8px;
 }
 
-body .main-price table tbody tr td strong {
+.main-price table tbody tr td strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1553,7 +1556,7 @@ body .main-price table tbody tr td strong {
   color: #fcf4f4;
 }
 
-body .main-price .sec-price p strong {
+.main-price .sec-price p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1569,7 +1572,7 @@ body .main-price .sec-price p strong {
   padding: 8px;
 }
 
-body .main-price .map-price {
+.main-price .map-price {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: map;
@@ -1579,7 +1582,7 @@ body .main-price .map-price {
   overflow: hidden;
 }
 
-body .main-price .map-price iframe {
+.main-price .map-price iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -1587,7 +1590,7 @@ body .main-price .map-price iframe {
   height: 100% !important;
 }
 
-body .main-galery {
+.main-galery {
       grid-template-areas: 'par-gal' 'galery';
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -1603,7 +1606,7 @@ body .main-galery {
   grid-area: main;
 }
 
-body .main-galery .sec-galery {
+.main-galery .sec-galery {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 1;
@@ -1617,7 +1620,7 @@ body .main-galery .sec-galery {
   margin: 0;
 }
 
-body .main-galery .sec-galery p strong {
+.main-galery .sec-galery p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1627,7 +1630,7 @@ body .main-galery .sec-galery p strong {
   padding: 20px;
 }
 
-body .main-galery #galery {
+.main-galery #galery {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: galery;
@@ -1648,7 +1651,7 @@ body .main-galery #galery {
   margin: 15px;
 }
 
-body .main-galery #galery .div-galery {
+.main-galery #galery .div-galery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1659,7 +1662,7 @@ body .main-galery #galery .div-galery {
   width: auto;
 }
 
-body .main-galery #galery .div-galery .img-galery-1 {
+.main-galery #galery .div-galery .img-galery-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1671,7 +1674,7 @@ body .main-galery #galery .div-galery .img-galery-1 {
   width: 100%;
 }
 
-body .main-galery #galery .div-galery .img-galery-2 {
+.main-galery #galery .div-galery .img-galery-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1683,7 +1686,7 @@ body .main-galery #galery .div-galery .img-galery-2 {
   width: 100%;
 }
 
-body .main-galery #galery .div-galery .img-galery-3 {
+.main-galery #galery .div-galery .img-galery-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1695,7 +1698,7 @@ body .main-galery #galery .div-galery .img-galery-3 {
   width: 100%;
 }
 
-body .main-galery #galery .div-galery .img-galery-4 {
+.main-galery #galery .div-galery .img-galery-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1707,7 +1710,7 @@ body .main-galery #galery .div-galery .img-galery-4 {
   width: 100%;
 }
 
-body .main-galery #galery .div-galery .img-galery-5 {
+.main-galery #galery .div-galery .img-galery-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1719,7 +1722,7 @@ body .main-galery #galery .div-galery .img-galery-5 {
   width: 100%;
 }
 
-body .main-galery #galery .div-galery .img-galery-6 {
+.main-galery #galery .div-galery .img-galery-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1731,32 +1734,32 @@ body .main-galery #galery .div-galery .img-galery-6 {
   width: 100%;
 }
 
-body .main-galery #galery .div-galery .img-galery-1:hover {
+.main-galery #galery .div-galery .img-galery-1:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-body .main-galery #galery .div-galery .img-galery-2:hover {
+.main-galery #galery .div-galery .img-galery-2:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-body .main-galery #galery .div-galery .img-galery-3:hover {
+.main-galery #galery .div-galery .img-galery-3:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-body .main-galery #galery .div-galery .img-galery-4:hover {
+.main-galery #galery .div-galery .img-galery-4:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-body .main-galery #galery .div-galery .img-galery-5:hover {
+.main-galery #galery .div-galery .img-galery-5:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-body .main-galery #galery .div-galery .img-galery-6:hover {
+.main-galery #galery .div-galery .img-galery-6:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
