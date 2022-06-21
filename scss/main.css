@@ -179,6 +179,11 @@
     background: var(--twitter);
   }
   body main {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'vid-home aside' 'img-home aside';
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr 1fr;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
@@ -212,6 +217,9 @@
     padding: 24px;
   }
   body main .vid-home {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: vid-home;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -226,6 +234,9 @@
     padding: 16px;
   }
   body main .img-home {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img-home;
     width: auto;
   }
   body .main-form {
@@ -264,6 +275,9 @@
     padding: 20px;
   }
   body .main-form form {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: form;
     padding: 30px;
   }
   body .main-form form .bg-gray-400 div .mb-3 label .form-label {
@@ -674,6 +688,11 @@
     background: var(--twitter);
   }
   body main {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'vid-home aside' 'img-home aside';
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr 1fr;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: main;
@@ -707,6 +726,9 @@
     padding: 24px;
   }
   body main .vid-home {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: vid-home;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -721,6 +743,9 @@
     padding: 16px;
   }
   body main .img-home {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img-home;
     width: auto;
   }
   body .main-form {
@@ -734,7 +759,9 @@
     grid-area: main;
   }
   body .main-form .sec-form {
-    grid-area: 'sec-form';
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: sec-form;
     height: 100%;
   }
   body .main-form .sec-form p strong {
@@ -884,7 +911,7 @@
     text-align: center;
     padding: 20px;
   }
-  body .main-galery .sec-galery #galery {
+  body .main-galery #galery {
     display: -ms-grid;
     display: grid;
     -ms-grid-row: 2;
@@ -902,14 +929,14 @@
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  body .main-galery .sec-galery #galery .div-galery {
+  body .main-galery #galery .div-galery {
     grid-area: div-galery;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-1 {
+  body .main-galery #galery .div-galery .img-galery-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: img-1;
@@ -924,7 +951,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-2 {
+  body .main-galery #galery .div-galery .img-galery-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: img-2;
@@ -939,7 +966,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-3 {
+  body .main-galery #galery .div-galery .img-galery-3 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: img-3;
@@ -954,7 +981,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-4 {
+  body .main-galery #galery .div-galery .img-galery-4 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: img-4;
@@ -969,7 +996,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-5 {
+  body .main-galery #galery .div-galery .img-galery-5 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: img-5;
@@ -984,7 +1011,7 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-6 {
+  body .main-galery #galery .div-galery .img-galery-6 {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: img-6;
@@ -999,27 +1026,27 @@
     width: 100%;
     position: absolute;
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-1:hover {
+  body .main-galery #galery .div-galery .img-galery-1:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-2:hover {
+  body .main-galery #galery .div-galery .img-galery-2:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-3:hover {
+  body .main-galery #galery .div-galery .img-galery-3:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-4:hover {
+  body .main-galery #galery .div-galery .img-galery-4:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-5:hover {
+  body .main-galery #galery .div-galery .img-galery-5:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  body .main-galery .sec-galery #galery .div-galery .img-galery-6:hover {
+  body .main-galery #galery .div-galery .img-galery-6:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
@@ -1309,8 +1336,8 @@ body main {
       grid-template-areas: 'vid-home aside' 'img-home aside';
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
-  -ms-grid-rows: 2fr 2fr;
-      grid-template-rows: 2fr 2fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: main;
@@ -1332,7 +1359,7 @@ body main .sec-home {
 }
 
 body main .sec-home p {
-  font-size: 25px;
+  font-size: 18px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -1391,7 +1418,7 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-form {
+body .main-form {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'sec-form' 'form';
@@ -1404,7 +1431,7 @@ body main .img-home .carousel-item .imgnormalizada {
   grid-area: main;
 }
 
-.main-form .sec-form {
+body .main-form .sec-form {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: top;
@@ -1415,7 +1442,7 @@ body main .img-home .carousel-item .imgnormalizada {
   grid-area: sec-form;
 }
 
-.main-form .sec-form p strong {
+body .main-form .sec-form p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1431,14 +1458,14 @@ body main .img-home .carousel-item .imgnormalizada {
   padding: 10px;
 }
 
-.main-form form {
+body .main-form form {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: form;
   padding: 30px;
 }
 
-.main-form form .bg-gray-400 div .mb-3 label .form-label {
+body .main-form form .bg-gray-400 div .mb-3 label .form-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1451,7 +1478,7 @@ body main .img-home .carousel-item .imgnormalizada {
           align-items: center;
 }
 
-.main-price {
+body .main-price {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'price' 'cards'  'table'  'map';
@@ -1464,13 +1491,13 @@ body main .img-home .carousel-item .imgnormalizada {
   grid-area: main;
 }
 
-.main-price .sec-price {
+body .main-price .sec-price {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: price;
 }
 
-.main-price .sec-cards {
+body .main-price .sec-cards {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: cards;
@@ -1483,7 +1510,7 @@ body main .img-home .carousel-item .imgnormalizada {
   height: auto;
 }
 
-.main-price table {
+body .main-price table {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: table;
@@ -1500,12 +1527,12 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-price table thead tr th {
+body .main-price table thead tr th {
   text-align: center;
   color: #fcf4f4;
 }
 
-.main-price table tbody tr td {
+body .main-price table tbody tr td {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1514,7 +1541,7 @@ body main .img-home .carousel-item .imgnormalizada {
   padding: 8px;
 }
 
-.main-price table tbody tr td strong {
+body .main-price table tbody tr td strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1526,7 +1553,7 @@ body main .img-home .carousel-item .imgnormalizada {
   color: #fcf4f4;
 }
 
-.main-price .sec-price p strong {
+body .main-price .sec-price p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1542,7 +1569,7 @@ body main .img-home .carousel-item .imgnormalizada {
   padding: 8px;
 }
 
-.main-price .map-price {
+body .main-price .map-price {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: map;
@@ -1552,7 +1579,7 @@ body main .img-home .carousel-item .imgnormalizada {
   overflow: hidden;
 }
 
-.main-price .map-price iframe {
+body .main-price .map-price iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -1560,7 +1587,7 @@ body main .img-home .carousel-item .imgnormalizada {
   height: 100% !important;
 }
 
-.main-galery {
+body .main-galery {
       grid-template-areas: 'par-gal' 'galery';
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -1576,7 +1603,7 @@ body main .img-home .carousel-item .imgnormalizada {
   grid-area: main;
 }
 
-.main-galery .sec-galery {
+body .main-galery .sec-galery {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 1;
@@ -1590,7 +1617,7 @@ body main .img-home .carousel-item .imgnormalizada {
   margin: 0;
 }
 
-.main-galery .sec-galery p strong {
+body .main-galery .sec-galery p strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1600,7 +1627,7 @@ body main .img-home .carousel-item .imgnormalizada {
   padding: 20px;
 }
 
-.main-galery #galery {
+body .main-galery #galery {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: galery;
@@ -1621,7 +1648,7 @@ body main .img-home .carousel-item .imgnormalizada {
   margin: 15px;
 }
 
-.main-galery #galery .div-galery {
+body .main-galery #galery .div-galery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1632,7 +1659,7 @@ body main .img-home .carousel-item .imgnormalizada {
   width: auto;
 }
 
-.main-galery #galery .div-galery .img-galery-1 {
+body .main-galery #galery .div-galery .img-galery-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1644,7 +1671,7 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-galery #galery .div-galery .img-galery-2 {
+body .main-galery #galery .div-galery .img-galery-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1656,7 +1683,7 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-galery #galery .div-galery .img-galery-3 {
+body .main-galery #galery .div-galery .img-galery-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1668,7 +1695,7 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-galery #galery .div-galery .img-galery-4 {
+body .main-galery #galery .div-galery .img-galery-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1680,7 +1707,7 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-galery #galery .div-galery .img-galery-5 {
+body .main-galery #galery .div-galery .img-galery-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1692,7 +1719,7 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-galery #galery .div-galery .img-galery-6 {
+body .main-galery #galery .div-galery .img-galery-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1704,32 +1731,32 @@ body main .img-home .carousel-item .imgnormalizada {
   width: 100%;
 }
 
-.main-galery #galery .div-galery .img-galery-1:hover {
+body .main-galery #galery .div-galery .img-galery-1:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.main-galery #galery .div-galery .img-galery-2:hover {
+body .main-galery #galery .div-galery .img-galery-2:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.main-galery #galery .div-galery .img-galery-3:hover {
+body .main-galery #galery .div-galery .img-galery-3:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.main-galery #galery .div-galery .img-galery-4:hover {
+body .main-galery #galery .div-galery .img-galery-4:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.main-galery #galery .div-galery .img-galery-5:hover {
+body .main-galery #galery .div-galery .img-galery-5:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-.main-galery #galery .div-galery .img-galery-6:hover {
+body .main-galery #galery .div-galery .img-galery-6:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
