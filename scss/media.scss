@@ -21,13 +21,6 @@
 
 /* Style para mis contenedores */
 
-nav{
-    grid-area: nav;
-}
-
-h2{
-    grid-area: h2;
-}
 
 body{
     display: grid;
@@ -37,6 +30,7 @@ body{
     'h2 h2'
     'main aside'
     'footer footer';
+
 
 header{
         display: grid;
@@ -61,6 +55,15 @@ header{
                 }
             }
     }
+
+nav{
+        grid-area: nav;
+}
+    
+h2{
+        grid-area: h2;
+}
+    
 
 footer{
     grid-area: footer;
@@ -147,13 +150,13 @@ footer{
 }
 
     
-main{
+.main-home{
     display: grid;
     grid-template-areas: 
     'vid-home aside'
     'img-home aside';
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-area: main;
     .sec-home{
         display: grid;
@@ -238,8 +241,16 @@ main{
 
     }
 
-.main-price{
+.main-price{ 
+    display: grid;    
+    grid-template-areas:
+    'cards price' 
+    'table price' 
+    'map price';
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr  2fr 1fr 2fr;
     grid-area: main;
+    width: 100%;
     table{ 
         margin: $spacing1*3;
         justify-content: center;
@@ -276,33 +287,46 @@ main{
      }
 
     .sec-price{
+        display: grid;
+        grid-area: price;
+        height: 100%;
+        justify-content: top;
+        align-content: center;
+        background-color:rgb(61, 64, 66);
+        color: white;
         p{
+            font-size: $secondary-text1*1.02;
+            font-family: 'Oswald', sans-serif;
             strong{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               font-size: $secondary-text1*1.02;
-               font-family: 'Oswald', sans-serif;
-               text-align: center;
-               padding: $spacing1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: $spacing1*3;
             }
         }
     }
 
-    .map-price{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width: 600px;
-        margin: auto;
-        padding: $spacing1*3;
-            iframe{
-                display: flex;
-                justify-items: center;
-                align-items: center;
-                }
-                 }
+    .sec-cards{
+        grid-area: cards;
     }
+
+    .map-price{
+        grid-area: map;
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+                }
+        }
+}
            
 .main-galery{
     display: grid;
@@ -441,7 +465,7 @@ main{
 
 }
 
- }
+}
 
 
 
@@ -468,13 +492,6 @@ main{
 
 /* Style para mis contenedores */
 
-nav{
-    grid-area: nav;
-}
-
-h2 {
-    grid-area: h2;
-}
 
 body{
     display: grid;
@@ -485,7 +502,7 @@ body{
     'main main aside'
     'footer footer footer';  
 
-    header{
+header{
             grid-area: header;
             display: block;
             justify-content: center;
@@ -508,7 +525,17 @@ body{
                     }
                 }
         }
+nav{
+            grid-area: nav;
+    }
+        
+h2 {
+            grid-area: h2;
+    }
 
+main{ 
+    grid-area: main;
+}
     footer{
         grid-area: footer;
         .titles-terciario{
@@ -594,13 +621,13 @@ body{
     }
 
     
-    main{
+.main-home{
         display: grid;
         grid-template-areas: 
         'vid-home aside'
         'img-home aside';
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-area: main;
         .sec-home{        
             display: grid;
@@ -626,7 +653,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px;
+            height: 100%;
             width: 100%;
             padding: $spacing1*2;
         }
@@ -684,15 +711,25 @@ form{
     }
 
 .main-price{
-        grid-area: main;
+    display: grid;    
+    grid-template-areas:
+    'cards price' 
+    'table price' 
+    'map price';
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-area: main;
+    width: 100%;
         table{ 
+            grid-area: table;
             margin: $spacing1*3;
+            display: block;
             justify-content: center;
             align-content: center;
             background-color:$color-primary;
             flex-wrap: wrap;
             height: 200px;
-            width: 80px;
+            width: 100%;
                 thead{
                     tr{
                         th{
@@ -720,34 +757,44 @@ form{
                 }
         }
 
-.sec-price{
-            p{
-                strong{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: $secondary-text1*1.05;
-                font-family: 'Oswald', sans-serif;
-                text-align: center;
-                padding: $spacing1;
+    .sec-price{
+        grid-area: price;
+                p{
+                    strong{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: $secondary-text1*1.05;
+                    font-family: 'Oswald', sans-serif;
+                    text-align: center;
+                    padding: $spacing1;
+                    }
                 }
             }
-        }
-
-        .map-price{
+    .sec-cards{
+            grid-area: cards;
             display: flex;
             justify-content: center;
             align-content: center;
-            width: 600px;
-            margin: auto;
-            padding: $spacing1*3;
-            iframe{
-                display: flex;
-                justify-items: center;
-                align-items: center;
-            }
-        }
+            height: auto; 
     }
+
+    .map-price{
+        grid-area: map;
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+                }
+        }
+    
            
 .main-galery{
         display: grid;
@@ -887,4 +934,4 @@ form{
 
 }
         
-
+}

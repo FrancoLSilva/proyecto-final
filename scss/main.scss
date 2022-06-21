@@ -181,20 +181,20 @@ main{
 .main-home{
     display: grid;    
     grid-template-areas:
-    'vid-home aside'
-    'img-home aside';
-    grid-template-columns: 3fr 1fr;
+    'aside'
+    'vid-home'
+    'img-home';
+    grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
     margin: none;
     padding: 8px;
     width: 100%;
 
         .sec-home{
-            display: grid;
+            display: flex;
             grid-area: aside;
-            height: 100%;
-            background-color:rgb(61, 64, 66);
-            color: white;
+            width: 100%;
+            height: 300px;
             p{  
                 font-size: $secondary-text2*1.2;
                 font-family: 'Oswald', sans-serif;
@@ -246,7 +246,7 @@ main{
     }
 
 
-    .main-form{
+.main-form{
         display: grid;
         grid-template-areas:
         'sec-form'
@@ -254,19 +254,20 @@ main{
         grid-template-columns: auto;
         grid-template-rows: 1fr 4fr;
         grid-area: main;
+        
         .sec-form{
             display: grid;
             justify-content: top;
             grid-area: sec-form;
             p{
                 strong{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: $secondary-text1;
-                font-family: 'Oswald', sans-serif;
-                text-align: center;
-                padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: $secondary-text1;
+                    font-family: 'Oswald', sans-serif;
+                    text-align: center;
+                    padding: 10px;
                 }
             }
             
@@ -291,27 +292,44 @@ main{
 
     }
 
-    .main-price{
-        display: grid;    
+.main-price{
+    display: grid;    
     grid-template-areas:
     'price'
     'cards' 
     'table' 
     'map';
     grid-template-columns: auto;
-    grid-template-rows: 2fr  4fr 4fr 4fr;
-        grid-area: main;
+    grid-template-rows: 1fr  2fr 2fr 3fr;
+    grid-area: main;
 
         .sec-price{
+            display: grid;
             grid-area: price;
+            height: 100%;
+            justify-content: center;
+            align-content: center;
+            p {
+                strong{
+                    height: 200px;
+                    display: flex;
+                    width: 100%;
+                    padding: none;
+            
+                }
+            }
+            
+          
         }
 
         .sec-cards{
             grid-area: cards;
             display: flex;
             justify-content: center;
+            align-content: center;
             height: auto; 
         }
+
         table{ 
             grid-area: table;
             margin: $spacing1*3;
@@ -348,25 +366,14 @@ main{
         }
         }
 
-    .sec-price{
-        p{
-            strong{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: $secondary-text1;
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-            padding: $spacing1;
-            }
-        }
-    }
+    
 
     .map-price{
         grid-area: map;
         position: relative;
         padding-bottom: 75%;
         height: 0;
+        width: 100%;
         overflow: hidden;
             iframe{
                 position: absolute;
