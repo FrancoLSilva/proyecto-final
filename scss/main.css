@@ -1492,8 +1492,8 @@ body main {
       grid-template-areas: 'aside' 'vid-home' 'img-home';
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 2fr 1fr;
-      grid-template-rows: 2fr 1fr;
+  -ms-grid-rows: 0.5 1fr 1fr;
+      grid-template-rows: 0.5 1fr 1fr;
   margin: none;
   padding: 8px;
   width: 100%;
