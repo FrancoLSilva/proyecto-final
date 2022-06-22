@@ -297,29 +297,54 @@ main{
     grid-template-areas:
     'price'
     'cards' 
-    'table' 
+    'table'
+    'sec-map' 
     'map';
     grid-template-columns: auto;
-    grid-template-rows: 1fr  2fr 2fr 3fr;
+    grid-template-rows: 0.3fr  2fr 0.5fr 0.3fr 0.5fr;
     grid-area: main;
 
         .sec-price{
-            display: grid;
+            display: flex;
             grid-area: price;
-            height: 100%;
-            justify-content: center;
-            align-content: center;
-            p {
+            height: 250px;
+            width: 100%;
+            justify-content: top;
+            p { display: flex;
+                justify-content: center;
+                align-content: center;
+                
                 strong{
-                    height: 200px;
                     display: flex;
-                    width: 100%;
-                    padding: none;
-            
+                    align-items: center;
+                    text-align: center;
+                    padding: $spacing1*3;
+                    height: 200px;
                 }
             }
-            
-          
+                     
+        }
+
+        .sec-map-price{
+            display: flex;
+            grid-area: sec-map;
+            height: 250px;
+            width: 100%;
+            justify-content: top;
+            p { display: flex;
+                justify-content: center;
+                align-content: center;
+                font-size: $secondary-text2*1.2;
+                font-family: 'Oswald', sans-serif;
+                strong{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    padding: $spacing1*3;
+                    height: 200px;
+                }
+            }
+
         }
 
         .sec-cards{
@@ -327,28 +352,32 @@ main{
             display: flex;
             justify-content: center;
             align-content: center;
-            height: auto; 
-        }
+            height: auto;
+            }
+        
 
         table{ 
             grid-area: table;
             margin: $spacing1*3;
-            justify-content: center;
-            align-content: center;
             background-color:$color-primary;
             flex-wrap: wrap;
             height: 200px;
-            width: 100%;
-                thead{
-                    tr{
+            width: 95%;
+                thead{         
+                justify-content: center;
+                align-content: center;
+                    tr{ color: $color-text2;
                         th{
                             text-align: center;
                             color: $color-text2;
                         }
                     }
                 }
-                tbody{
+                tbody{      
+                justify-content: center;
+                align-content: center;
                     tr{
+                        color: $color-text2;
                         td{
                             justify-content: center;
                             align-content: center;

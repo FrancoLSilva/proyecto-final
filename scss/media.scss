@@ -246,21 +246,22 @@ footer{
     grid-template-areas:
     'cards price' 
     'table price' 
-    'map price';
+    'map sec-map';
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr  2fr 1fr 2fr;
+    grid-template-rows: 3fr  0.5fr 1fr;
     grid-area: main;
     width: 100%;
+
     table{ 
         margin: $spacing1*3;
-        justify-content: center;
-        align-content: center;
         background-color:$color-primary;
         flex-wrap: wrap;
-        height: 200px*1.5;
-        width: 80px*1.5;
+        height: auto;
+        width: 95%;
             thead{
                 tr{
+                    justify-content: center;
+                    align-content: center;
                     th{
                         text-align: center;
                         color: $color-text2;
@@ -268,7 +269,9 @@ footer{
                 }
             }
             tbody{
-                tr{
+                tr{ justify-content: center;
+                    align-content: center;
+                    color: $color-text2;
                     td{
                         justify-content: center;
                         align-content: center;
@@ -307,8 +310,36 @@ footer{
         }
     }
 
+    .sec-map-price{
+        display: flex;
+        grid-area: sec-map;
+        height: 100%;
+        width: 100%;
+        justify-content: top;
+        background-color:rgb(61, 64, 66);
+        color: white;
+            p { display: flex;
+                justify-content: center;
+                align-content: center;
+                font-size: $secondary-text1*1.02;
+                font-family: 'Oswald', sans-serif;
+                strong{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    padding: $spacing1*3;
+                    height: 200px;
+                    }
+                }
+    
+    }
+
     .sec-cards{
         grid-area: cards;
+        justify-content: center;
+        align-content: center;
+        height: auto;
+  
     }
 
     .map-price{
@@ -664,7 +695,7 @@ main{
 
         }
     }
-}
+
 
 .main-form{
         display: grid;
@@ -677,13 +708,15 @@ main{
             .sec-form{
                 grid-area: sec-form;
                 height: 100%;
+                background-color:rgb(61, 64, 66);
+                color: white;
                 p{
+                    font-size: $secondary-text1*1.05;
+                    font-family: 'Oswald', sans-serif;
                     strong{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-size: $secondary-text1*1.05;
-                    font-family: 'Oswald', sans-serif;
                     text-align: center;
                     padding: 20px;
                     }
@@ -715,47 +748,47 @@ form{
     grid-template-areas:
     'cards price' 
     'table price' 
-    'map price';
+    'map sec-map';
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 0.3fr 1fr;
     grid-area: main;
     width: 100%;
-        table{ 
-            grid-area: table;
-            margin: $spacing1*3;
-            display: block;
-            justify-content: center;
-            align-content: center;
-            background-color:$color-primary;
-            flex-wrap: wrap;
-            height: 200px;
-            width: 100%;
-                thead{
-                    tr{
-                        th{
+    table{ 
+        margin: $spacing1*3;
+        background-color:$color-primary;
+        flex-wrap: wrap;
+        height: auto;
+        width: 95%;
+            thead{
+                tr{
+                    justify-content: center;
+                    align-content: center;
+                    th{
+                        text-align: center;
+                        color: $color-text2;
+                    }
+                }
+            }
+            tbody{
+                tr{ justify-content: center;
+                    align-content: center;
+                    color: $color-text2;
+                    td{
+                        justify-content: center;
+                        align-content: center;
+                        padding: $spacing1;
+                        strong{
+                            display: flex;
+                            align-items: center;
+                            justify-items: center;
                             text-align: center;
                             color: $color-text2;
                         }
                     }
                 }
-                tbody{
-                    tr{
-                        td{
-                            justify-content: center;
-                            align-content: center;
-                            padding: $spacing1;
-                            strong{
-                                display: flex;
-                                align-items: center;
-                                justify-items: center;
-                                text-align: center;
-                                color: $color-text2;
-                            }
-                        }
-                    }
 
-                }
-        }
+       }
+     }
 
     .sec-price{
         grid-area: price;
@@ -770,14 +803,40 @@ form{
                     padding: $spacing1;
                     }
                 }
-            }
-    .sec-cards{
-            grid-area: cards;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            height: auto; 
     }
+    
+    .sec-map-price{
+        display: flex;
+        grid-area: sec-map;
+        height: 100%;
+        width: 100%;
+        justify-content: top; 
+        background-color:rgb(61, 64, 66);
+        color: white;
+            p { display: flex;
+                justify-content: center;
+                align-content: center;
+                font-size: $secondary-text1*1.02;
+                font-family: 'Oswald', sans-serif;
+                strong{
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    padding: $spacing1*3;
+                    height: 200px;
+                    }
+                }
+    
+    }
+
+    .sec-cards{
+                grid-area: cards;
+                justify-content: center;
+                align-content: center;
+                height: auto;
+                width: 100%;
+                
+            }
 
     .map-price{
         grid-area: map;
@@ -932,6 +991,7 @@ form{
         }
 
 
+}
 }
         
 }
